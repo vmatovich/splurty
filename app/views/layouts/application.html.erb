@@ -14,6 +14,8 @@
 
     <div class="col-3">
 
+      <%= link_to root_path, class: 'logo' do %>
+
     <div class="circle">
   
     <br />
@@ -28,10 +30,11 @@ San Francisco
   
     Life
   
+      </div>
+
+    <% end %>
+
   </div>
-
-
-    </div>
 
     <div class="col-4 slogan">
 
@@ -41,7 +44,7 @@ San Francisco
 
       <div class="col-5 links">
 
-        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'Contribute', new_quote_path %>
 
         <%= link_to 'About', '#' %>
 
@@ -67,7 +70,7 @@ San Francisco
 
         <div class="col-6">
 
-         <%= link_to "This is hilarious, show me another", "#", class: 'next-quote' %>
+         <%= link_to "This is hilarious, show me another", root_path, class: 'next-quote' %>
 
          </div>
 
