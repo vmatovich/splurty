@@ -18,17 +18,18 @@
 
     <div class="circle">
   
-    <br />
+      <br />
   
-    That
+      That
   
-    <br />
+      <br />
 
   
-San Francisco  
-    <br />
+       San Francisco  
+   
+       <br />
   
-    Life
+       Life
   
       </div>
 
@@ -36,19 +37,21 @@ San Francisco
 
   </div>
 
-    <div class="col-4 slogan">
+    <div class="col col-sm-4 hidden-xs-down slogan">
 
       Splurting out unsolicited advice since 2016
 
       </div>
 
-      <div class="col-5 links">
+      <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
 
       <!-- Button trigger modal -->
          
         
     <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
         
+        &nbsp;&nbsp;
+
     <%= link_to 'About', about_path %>
 
       </div>
@@ -81,9 +84,9 @@ San Francisco
        
         <div class="modal-body">
           
-          <%= f.input :saying %>
+          <%= f.input :saying, label: "What is something you would like to add?", placeholder: "Living in the Bay Area is like being an onion...lots of layers." %>
          
-          <%= f.input :author %>
+          <%= f.input :author, label: "Who can we thank for this awesome input?", placeholder: "Elizabeth S." %>
         
         </div>
        
@@ -129,17 +132,15 @@ San Francisco
     
     <div class="container">
 
-      </div>
-     
       <div class="row">
 
-        <div class="col-6">
+        <div class="col-12 col-sm-6">
 
-         <%= link_to "This is hilarious, show me another", root_path, class: 'next-quote' %>
+          <%= link_to "This is hilarious, show me more", root_path, class: 'next-quote' %>
+     
+        </div>
 
-         </div>
-
-        <div class="col-6 footer-blurb">
+        <div class="col-12 col-sm-6 footer-blurb">
 
         Proudly hacked in San Francisco, CA by Veronica Matovich
 

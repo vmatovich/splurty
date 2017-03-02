@@ -109,3 +109,28 @@ font-family: Futura,Trebuchet MS,Arial,sans-serif;
   padding-top: 26px;
 
   }
+
+
+@media (max-width: 750px) {
+  
+  .footer_blurb {
+
+  text-align: left;
+  
+  }
+
+}
+
+.modal {
+  
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+}
+
+h2 span {
+  color: #647DED;
+  font-family: 'sofia_prolight';
+}
+
+::selection {
+  background-color: #f84342;
+}
